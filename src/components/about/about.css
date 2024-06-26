@@ -1,0 +1,65 @@
+/* AboutPage.css */
+.about-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    /* background: linear-gradient(to right, #ff8c00, #3498db); */
+    color: black;
+  }
+  
+  .about-text {
+    max-width: 600px;
+  }
+  .about-text h1 {
+    color: rgba(186, 75, 100, 1);
+  }
+  
+  .about-images {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .image-item {
+    flex: 0 0 calc(33.333% - 20px); /* Adjust the width of each image item */
+    margin: 10px;
+    padding: 20px; /* Adjusted padding on all sides */
+    box-sizing: border-box;
+    position: relative;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adjusted box shadow */
+    border-radius: 12px; /* Adjusted border-radius for rounded corners */
+    text-align: center; /* Center-align the text */
+  }
+  
+  .image {
+    width: 100%; /* Set a fixed width for the image */
+    max-width: 150px; /* Set a smaller maximum width for responsiveness */
+    height: auto;
+    border-radius: 8px; /* Adjusted border-radius for rounded corners */
+  }
+  
+  .image-text {
+    text-align: center;
+    color: black;
+  }
+  
+  .image-text h2 {
+    margin-top: 10px; /* Added margin to separate image and text */
+    margin-bottom: 10px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .about-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .about-images {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-item {
+      flex: 0 0 100%;
+    }
+  }
+  

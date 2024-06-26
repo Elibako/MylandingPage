@@ -1,0 +1,39 @@
+/* SecondSection.css */
+.second-section {
+    display: flex;
+    flex-direction: column; /* Display items vertically on small screens */
+    padding: 50px;
+    /* background: linear-gradient(to right, #ff8c00, #3498db); */
+    color: black;
+  }
+  
+  .second-text,
+  .second-image {
+    width: 100%; /* Set width to 100% initially */
+    padding: 20px; /* Adjusted padding on all sides */
+    box-sizing: border-box;
+  }
+  .second-text h1 {
+    color: rgba(186, 75, 100, 1);
+  }
+  
+  
+  
+  .image {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .second-section {
+      flex-direction: row; /* Display items horizontally on larger screens */
+      justify-content: space-around;
+      align-items: center;
+    }
+  
+    .second-text,
+    .second-image {
+      width: 50%; /* Set width to 50% for text and image */
+    }
+  }
+  
